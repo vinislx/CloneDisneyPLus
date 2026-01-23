@@ -1,10 +1,16 @@
-$corDeFundo: #dddddd;
+$corDeFundo: #040714;
 $corPrimaria: #0c83d3;
 $corSecundaria: #00a344;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $corDeFundo;
-    color: $corSecundaria;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: white;
 }
 
