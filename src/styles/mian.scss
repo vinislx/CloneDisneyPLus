@@ -1,10 +1,51 @@
-$corDeFundo: #dddddd;
-$corPrimaria: #0c83d3;
-$corSecundaria: #00a344;
+$corDeFundo: #040714;
+$cortextoPrimaria: #fefefe;
+$cortextoSecundaria: #87878c;
+
+
+/* Construção do texto */
+
+@mixin text($fontSize: 16px) {
+font-size: $fontSize;
+line-height: $fontSize + 10px;
+color: $corTextoPrincipa1
+}
+
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.text--big {
+    @include text(18px);
+}
+
+@mixin title ($fontSine: 28px) {
+    @include text($fontSize);
+    color: $cortextoPrimaria;
+
+}
+
+.title--big {
+
+}
+
+
+
+/* layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: $corDeFundo;
-    color: $corSecundaria;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: white;
 }
-

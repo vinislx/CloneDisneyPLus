@@ -1,3 +1,5 @@
+npm install
 npm i --save-dev gulp 
 npm i --save-dev gulp-sass
 npm i --save-dev sass
+npm i --save-dev gulp-imagemin@7.1.0
