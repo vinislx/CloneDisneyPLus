@@ -1,5 +1,9 @@
 .hero {
+    width: 100%;
     padding: 5.6vw;
     min-height: 80vh;
-    background-image: url(../images/hero_desktop.jpeg);
+    background-image: url('../images/hero_desktop.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
