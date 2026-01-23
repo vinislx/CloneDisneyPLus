@@ -1,4 +1,4 @@
-@use '.hero';
+@use 'hero';
 
 $corDeFundo: #040714;
 $corTextoPrimaria: #fefefe;
@@ -6,28 +6,28 @@ $corTextoSecundaria: #44454f;
 
 /* configação de texto */
 
-@mixin typography($size: 16px, $color: color("corTextoPrimaria")) {
+@mixin typography($size: 16px, $color: #44454f) {
     font-size: $size;
     line-height: $size + 10px; 
     color: $color;
 }
 
 .title {
-    @include typography(44px); 
+    @include typography(44px, $corTextoPrimaria); 
 
-    &--big   { @include typography(40px); }
-    &--small { @include typography(28px); }
+    &--big   { @include typography(40px, $corTextoPrimaria); }
+    &--small { @include typography(28px, $corTextoPrimaria); }
 }
 
 .text {
-    @include typography(16px, color("corTextoPrimaria"));
+    @include typography(16px, $corTextoSecundaria);
 
-    &--big   { @include typography(18px, color("corTextoPrimaria")); }
-    &--small { @include typography(12px, color("corTextoSecundaria")); }
+    &--big   { @include typography(18px, $corTextoPrimaria); }
+    &--small { @include typography(12px, $corTextoSecundaria); }
 }
 
 .link-text {
-    @include typography(18px, color("corTextoPrimaria"), underline);
+    @include typography(18px, $corTextoPrimaria);
 }
 
 
