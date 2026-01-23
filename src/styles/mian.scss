@@ -1,6 +1,29 @@
-$corDeFundo: #dddddd;
-$corPrimaria: #0c83d3;
-$corSecundaria: #00a344;
+$corDeFundo: #040714;
+$corTextoPrimaria: #fefefe;
+$corTextoSecundaria: #44454f;
+
+/* configação de texto */
+
+@mixin typography($size: 16px, $color: color("corTextoPrimaria")) {
+    font-size: $size;
+    line-height: $size + 10px; 
+    color: $color;
+}
+
+.title {
+    @include typography(44px); 
+
+    &--big   { @include typography(40px); }
+    &--small { @include typography(28px); }
+}
+
+.text {
+    @include typography(16px, color("corTextoPrimaria"));
+
+    &--big   { @include typography(18px, color("corTextoPrimaria")); }
+    &--small { @include typography(12px, color("corTextoPrimaria")); }
+}
+
 
 body {
     background-color: $corDeFundo;
