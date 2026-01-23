@@ -14,9 +14,8 @@ function comprimirimg() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel (compileSass, comprimirimg);
-
-
+exports.default = compileSass;
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(compileSass));
 }
+
