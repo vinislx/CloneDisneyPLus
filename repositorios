@@ -3,3 +3,17 @@ npm i --save-dev gulp
 npm i --save-dev gulp-sass
 npm i --save-dev sass
 npm i --save-dev gulp-imagemin@7.1.0
+
+classificação para organização {
+base 
+layout
+modulos 
+estaos
+temaos 
+
+nomenclaturas {
+  is= esado;
+  layout= layout;
+}
+
+}
