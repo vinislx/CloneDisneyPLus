@@ -1,38 +1,43 @@
+@use 'variaveis';
 @use 'hero';
 
-$corDeFundo: #040714;
-$corTextoPrimaria: #fefefe;
-$corTextoSecundaria: #44454f;
+/* reset de estilos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* configação de texto */
 
-@mixin typography($size: 16px, $color: #44454f) {
+@mixin typography($size: 16px, $color: variaveis.$corTextoPrimaria) {
     font-size: $size;
     line-height: $size + 10px; 
     color: $color;
 }
 
 .title {
-    @include typography(44px, $corTextoPrimaria); 
+    @include typography(44px, variaveis.$corTextoPrimaria); 
 
-    &--big   { @include typography(40px, $corTextoPrimaria); }
-    &--small { @include typography(28px, $corTextoPrimaria); }
+    &__big   { @include typography(40px, variaveis.$corTextoPrimaria); }
+    &__small { @include typography(28px, variaveis.$corTextoPrimaria); }
 }
 
 .text {
-    @include typography(16px, $corTextoSecundaria);
+    @include typography(16px, variaveis.$corTextoSecundaria);
 
-    &--big   { @include typography(18px, $corTextoPrimaria); }
-    &--small { @include typography(12px, $corTextoSecundaria); }
+    &__big   { @include typography(18px, variaveis.$corTextoPrimaria); }
+    &__small { @include typography(12px, variaveis.$corTextoSecundaria); }
 }
 
 .link-text {
-    @include typography(18px, $corTextoPrimaria);
+    @include typography(18px, variaveis.$corTextoPrimaria);
 }
 
 
 body {
-    background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
     font-family: 'Arial', sans-serif;
     color: white;
 }

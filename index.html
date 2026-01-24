@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney+</title>
     <link rel="stylesheet" href="./dist/styles/mian.css">
-    <style>
-        .hero {
-            width: 100%;
-            height: 80vh;
-            background-image: url('./dist/images/hero_desktop.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 <body>
-    <section class="hero"></section>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./dist/images/disneyplus.svg" alt="logo Disney Plus">
+            </h1>
+            <h3 class="title__small">As melhores histórias em um só lugar.</h3>
+            <p class="text__small">
+                <a href="#" class="link-text">Assine já</a>
+                <br>
+                e aproveite o melhor do entretenimento
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo"> <img src="./dist/images/logos/disney_star_plus.png" alt="disney_plus + star_plus">
+                <button>Assina já</button>
+                <span>R$ 45,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo"> <img src="./dist/images/logos/disney_star_plus.png" alt="disney_star_plus">
+                <button>Assina já</button>
+                <span>R$ 45,90/mês*</span>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
