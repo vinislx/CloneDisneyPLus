@@ -1,12 +1,30 @@
 @use 'variaveis';
 @use 'hero';
 
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/avenir-regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../../assets/fonts/avenir-bold.ttf');
+    font-weight: 700;
+}
+
 /* reset de estilos */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+    font-family: 'Avenir', sans-serif;
+    color: white;
 }
 
 /* configação de texto */
@@ -36,8 +54,3 @@
 }
 
 
-body {
-    background-color: variaveis.$corDeFundo;
-    font-family: 'Arial', sans-serif;
-    color: white;
-}
