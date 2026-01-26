@@ -39,15 +39,15 @@ body {
 .title {
     @include typography(44px, variaveis.$corTextoPrimaria); 
 
-    &__big   { @include typography(40px, variaveis.$corTextoPrimaria); }
-    &__small { @include typography(28px, variaveis.$corTextoPrimaria); }
+    &--big   { @include typography(40px, variaveis.$corTextoPrimaria); }
+    &--small { @include typography(28px, variaveis.$corTextoPrimaria); }
 }
 
 .text {
     @include typography(16px, variaveis.$corTextoSecundaria);
 
-    &__big   { @include typography(18px, variaveis.$corTextoPrimaria); }
-    &__small { @include typography(12px, variaveis.$corTextoSecundaria); }
+    &--big   { @include typography(18px, variaveis.$corTextoPrimaria); }
+    &--small { @include typography(12px, variaveis.$corTextoSecundaria); }
 }
 
 .link-text {
