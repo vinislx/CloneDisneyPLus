@@ -37,6 +37,7 @@
             cursor: pointer;
             text-transform: uppercase;
             padding-bottom: 8px;
+            border-bottom: 4px solid transparent;
 
             &--is-active {
                 border-bottom: 4px solid variaveis.$corTextoPrimaria;
