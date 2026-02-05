@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney+</title>
-    <link rel="stylesheet" href="./dist/styles/mian.css">
+    <link rel="stylesheet" href="./dist/styles/main.css">
 </head>
 <body>
 
@@ -25,13 +25,13 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo"> 
                     <img src="./dist/images/logos/disney_star_plus.png" alt="disney_plus + star_plus">
-                    <button>Assina já</button>
+                    <button class="button">Assina já</button>
                     <span>R$ 45,90/mês*</span>
                 </li>
 
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="disney_plus + star_plus + starzplay">
-                    <button>Assina já</button>
+                    <button class="button">Assina já</button>
                     <span>R$ 59,90/mês*</span>
                 </li>
             </ul>
@@ -129,25 +129,35 @@
 
     </section>
 
-    <section class="plans">
+<section class="plans">
+
         <h2 class="title--big">Escolha seu plano</h2>
-        <ul class="plans_list">
-            <li class="plans_list_item">
+        <ul class="plans__list">
+
+            <li class="plans__list__item">
                 <img src="./dist/images/logos/disneyplus_underline.png" alt="disneyplus_logo">
                 <strong class="text--big">27,90* mês</strong>
-                <p class="text">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+                <p class="text--wsmall">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+            <button>Assine já</button>
             </li>
-            <li class="plans_list_item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="disneyplus_logo">
+                    <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="disneyplus_logo">
                 <strong class="text--big">27,90* mês</strong>
-                <p class="text">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+                <p class="text--wsmall">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+            <button>Assine já</button>
             </li>
-            <li class="plans_list_item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="disneyplus_logo">
+                    <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="disneyplus_logo">
                 <strong class="text--big">27,90* mês</strong>
-                <p class="text">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+                <p class="text--wsmall">No Disney* você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.</p>
+            <button>Assine já</button>
             </li>
+
         </ul>
+
+        <p class="text--small">
+            Os preoços podem variar conforme a região e estão sujeitos a alterações. Consulte os termos e condições para mais detalhes.
+        </p>
     </section>
 
     <script src="./src/main.js">

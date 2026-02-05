@@ -2,7 +2,7 @@
 
 
 .show {
-    padding: 2vw 5.6vw;
+    padding: 2vw 5.6vw 10vw 5.6vw;
     background-color: variaveis.$corDeFundo;
 
     &__list {
@@ -11,15 +11,23 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+
         &--is-active {
             display: grid;
         }
 
         &__item {
             list-style: none;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+
             img {
                 width: 100%;
                 border-radius: 8px;
+            }
+            
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }

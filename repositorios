@@ -12,6 +12,8 @@ estaos
 temaos 
 
 nomenclaturas {
+  _= estrutura
+  -= estado/funcão
   is= esado;
   layout= layout;
 }

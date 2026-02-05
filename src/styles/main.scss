@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use '_planos';
 
 @font-face {
     font-family: Avenir;
@@ -48,10 +49,27 @@ body {
 
     &--big   { @include typography(18px, variaveis.$corTextoPrimaria); }
     &--small { @include typography(12px, variaveis.$corTextoSecundaria); }
+    &--wsmall { @include typography(12px, variaveis.$corTextoPrimaria); }
 }
 
 .link-text {
     @include typography(18px, variaveis.$corTextoPrimaria);
 }
 
-
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: variaveis.$corTextoPrimaria;
+    background-color: variaveis.$botaoHero;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: variaveis.$botaoHover;
+    }
+}
